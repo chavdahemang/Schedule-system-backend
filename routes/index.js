@@ -1,9 +1,4 @@
 const express = require('express');
-const Availability = require('../models/Availability');
-const { PORT } = require('..');
-const { BASE_LOCAL_URL, BASE_CLIENT_LOCAL_URL } = require('../constants');
-const BookingLink = require('../models/BookingLink');
-const Booking = require('../models/Booking');
 const { createAvailability, generateLink, availability, book } = require('../controllers');
 const router = express.Router()
 
